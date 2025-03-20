@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abrar A. | Unity Game Developer</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/css/lightgallery-bundle.min.css" />
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white">
+    <header class="bg-gray-800 p-6 flex justify-between items-center">
+        <h1 class="text-3xl font-bold">Abrar A.</h1>
+        <nav class="space-x-4">
+            <a href="#projects" class="hover:text-blue-400">Projects</a>
+            <a href="#about" class="hover:text-blue-400">About</a>
+            <a href="#contact" class="hover:text-blue-400">Contact</a>
+        </nav>
+    </header>
+
+    <section class="text-center py-16 px-4">
+        <h2 class="text-4xl font-bold mb-4">Unity Game Developer</h2>
+        <p class="max-w-xl mx-auto">Specializing in AR/VR, Multiplayer, and Mobile/PC Games. 7+ years of experience crafting engaging gameplay, optimized performance, and seamless UI/UX.</p>
+    </section>
+
+    <section id="projects" class="px-8 py-16 bg-gray-800">
+        <h3 class="text-3xl font-bold mb-8 text-center">Projects</h3>
+        <div id="lightgallery" class="grid md:grid-cols-3 gap-8">
+            <!-- Project Card Example -->
+            <div class="bg-gray-700 rounded-2xl shadow-md p-4">
+                <a href="project1-image1.jpg" data-lg-size="1406-1390" data-sub-html="<h4>Survival AR Multiplayer</h4><p>Real-time AR game with AI chasers and Firebase authentication. Features live player tracking and challenging AI opponents.</p>">
+                    <img src="project1-thumbnail.jpg" alt="Project 1" class="rounded-xl mb-4">
+                </a>
+                <h4 class="text-xl font-semibold mb-2">Survival AR Multiplayer</h4>
+                <p class="mb-4">Real-time AR game with AI chasers and Firebase authentication. Features live player tracking and challenging AI opponents.</p>
+                <a href="project1-image1.jpg" data-lg-size="1406-1390" data-sub-html="<h4>Survival AR Multiplayer</h4><p>Additional Image 1</p>" style="display:none;"></a>
+                <a href="project1-image2.jpg" data-lg-size="1406-1390" data-sub-html="<h4>Survival AR Multiplayer</h4><p>Additional Image 2</p>" style="display:none;"></a>
+                <a href="project1-image3.jpg" data-lg-size="1406-1390" data-sub-html="<h4>Survival AR Multiplayer</h4><p>Additional Image 3</p>" style="display:none;"></a>
+                <span class="text-blue-400 hover:underline cursor-pointer block mt-2" onclick="document.querySelector('#lightgallery').querySelector('a[href=\'project1-image1.jpg\']').click()">View Gallery</span>
+            </div>
+            <!-- Repeat similar cards for more projects -->
+        </div>
+    </section>
+
+    <section id="about" class="py-16 px-8">
+        <h3 class="text-3xl font-bold mb-6 text-center">About Me</h3>
+        <p class="max-w-3xl mx-auto text-center">I'm Abrar A., a Unity developer passionate about crafting immersive games. My expertise covers Unity, C#, ARKit, ARCore, Firebase, Mapbox, VR, and optimization. I have delivered projects across mobile, WebGL, and PC platforms, excelling in UI/UX, SDK integrations, and gamification.</p>
+    </section>
+
+    <section id="contact" class="bg-gray-800 py-16 px-8">
+        <h3 class="text-3xl font-bold mb-6 text-center">Contact</h3>
+        <form class="max-w-xl mx-auto space-y-4">
+            <input type="text" placeholder="Name" class="w-full p-3 rounded-xl text-black" required>
+            <input type="email" placeholder="Email" class="w-full p-3 rounded-xl text-black" required>
+            <textarea placeholder="Message" rows="4" class="w-full p-3 rounded-xl text-black" required></textarea>
+            <button type="submit" class="bg-blue-500 hover:bg-blue-600 px-6 py-2 rounded-xl">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="text-center p-6 bg-gray-900">
+        <p>&copy; 2025 Abrar A. | Unity Game Developer</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/lightgallery.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/thumbnail/lg-thumbnail.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.4.0/plugins/zoom/lg-zoom.umd.js"></script>
+    <script>
+    lightGallery(document.getElementById('lightgallery'), {
+      plugins: [lgZoom, lgThumbnail],
+      thumbnail: true,
+      selector: 'a'
+    });
+    </script>
+</body>
+</html>
