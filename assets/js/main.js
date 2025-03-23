@@ -13,7 +13,9 @@
    * Header toggle
    */
   const headerToggleBtn = document.querySelector('.header-toggle');
-
+    const lightbox = GLightbox({
+        selector: '.glightbox'
+    });
   function headerToggle() {
     document.querySelector('#header').classList.toggle('header-show');
     headerToggleBtn.classList.toggle('bi-list');
