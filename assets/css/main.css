@@ -543,79 +543,125 @@ section,
 # Hero Section
 --------------------------------------------------------------*/
 .hero {
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  padding: 80px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.hero img {
-  position: absolute;
-  inset: 0;
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
+/* Swiper slider container */
+.hero-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
+    /* Swiper Wrapper */
+    .hero-slider .swiper-wrapper {
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Swiper Slide */
+    .hero-slider .swiper-slide {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+    /* Image inside Slide */
+    .hero-slider img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    /* Swiper Pagination (if needed) */
+    .hero-slider .swiper-pagination {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+    }
+
+
+    /* Swiper slides (images) */
+ 
+
+/* Background overlay */
 .hero:before {
-  content: "";
-  background: color-mix(in srgb, var(--background-color), transparent 70%);
-  position: absolute;
-  inset: 0;
-  z-index: 2;
+    content: "";
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    position: absolute;
+    inset: 0;
+    z-index: 2;
 }
 
+/* Ensuring text stays above slider */
 .hero .container {
-  position: relative;
-  z-index: 3;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    color: white;
 }
 
+/* Hero text styles */
 .hero h2 {
-  margin: 0;
-  font-size: 64px;
-  font-weight: 700;
+    margin: 0;
+    font-size: 64px;
+    font-weight: 700;
 }
 
 .hero p {
-  margin: 5px 0 0 0;
-  font-size: 26px;
+    margin: 5px 0 0 0;
+    font-size: 26px;
 }
 
-.hero p span {
-  letter-spacing: 1px;
-  border-bottom: 2px solid var(--accent-color);
-}
+    .hero p span {
+        letter-spacing: 1px;
+        border-bottom: 2px solid var(--accent-color);
+    }
 
+/* Social links */
 .hero .social-links {
-  margin-top: 25px;
+    margin-top: 25px;
 }
 
-.hero .social-links a {
-  font-size: 24px;
-  display: inline-block;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  line-height: 1;
-  margin-right: 20px;
-  transition: 0.3s;
-}
+    .hero .social-links a {
+        font-size: 24px;
+        display: inline-block;
+        color: rgba(255, 255, 255, 0.7);
+        line-height: 1;
+        margin-right: 20px;
+        transition: 0.3s;
+    }
 
-.hero .social-links a:hover {
-  color: var(--accent-color);
-}
+        .hero .social-links a:hover {
+            color: var(--accent-color);
+        }
 
+/* Responsive styles */
 @media (max-width: 768px) {
-  .hero h2 {
-    font-size: 32px;
-  }
+    .hero h2 {
+        font-size: 32px;
+    }
 
-  .hero p {
-    font-size: 20px;
-  }
+    .hero p {
+        font-size: 20px;
+    }
 }
 
 /*--------------------------------------------------------------
@@ -1266,6 +1312,8 @@ section,
   margin-right: 8px;
   color: var(--accent-color);
 }
+
+
 
 /*--------------------------------------------------------------
 # Starter Section Section

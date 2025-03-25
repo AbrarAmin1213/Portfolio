@@ -226,6 +226,41 @@
     })
   }
   window.addEventListener('load', navmenuScrollspy);
-  document.addEventListener('scroll', navmenuScrollspy);
+    document.addEventListener('scroll', navmenuScrollspy);
+
+   
+    window.addEventListener("load", function () {
+        const heroSlider = document.querySelector(".hero-slider");
+
+        if (heroSlider) {
+            const swiperInstance = new Swiper(".hero-slider", {
+                loop: true,
+                autoplay: {
+                    delay: 3000,
+                    disableOnInteraction: false,
+                },
+                effect: "fade",
+                speed: 1000,
+                slidesPerView: 1,
+                spaceBetween: 0,
+                on: {
+                    init: function () {
+                        console.log("Swiper initialized with", this.slides.length, "slides");
+                    },
+                    slideChange: function () {
+                        console.log("Swiper changed to slide:", this.realIndex);
+                    }
+                }
+            });
+
+            console.log("Hero Swiper initialized successfully!");
+        } else {
+            console.error("Hero Swiper container not found!");
+        }
+    });
+
+
+
 
 })();
+
