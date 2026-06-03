@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Abrar Amin — Lead Unity / AR-VR Developer</title>
+  <meta name="description" content="Abrar Amin — Lead Unity Developer with 7+ years building AR/VR, multiplayer and immersive 3D experiences. Portfolio, showreel and work history." />
+  <meta property="og:title" content="Abrar Amin — Lead Unity / AR-VR Developer" />
+  <meta property="og:description" content="7+ years building AR/VR, multiplayer and immersive 3D experiences." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎮</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Animated background blobs -->
+  <div class="bg-blobs" aria-hidden="true">
+    <span class="blob blob-1"></span>
+    <span class="blob blob-2"></span>
+    <span class="blob blob-3"></span>
+  </div>
+
+  <!-- Nav -->
+  <header class="nav" id="nav">
+    <a href="#top" class="brand">AA<span>.</span></a>
+    <nav class="nav-links">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="nav-toggle" aria-label="Toggle menu" id="navToggle">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text reveal">
+        <p class="eyebrow">👋 Hi, I'm</p>
+        <h1>Abrar&nbsp;Amin</h1>
+        <h2 class="role">
+          <span class="rotator" id="rotator">Lead Unity Developer</span>
+        </h2>
+        <p class="lede">
+          I build <strong>AR / VR</strong>, multiplayer and immersive <strong>3D worlds</strong>.
+          7+ years turning ambitious ideas into shipped, performant experiences across mobile and headsets.
+        </p>
+        <div class="hero-cta">
+          <a href="#work" class="btn btn-primary">View my work</a>
+          <a href="https://www.upwork.com/freelancers/~013c3e309072027fac" target="_blank" rel="noopener" class="btn btn-upwork">🟢 Hire me on Upwork</a>
+          <a href="#contact" class="btn btn-ghost">Get in touch</a>
+        </div>
+        <div class="hero-stats">
+          <div><b>7+</b><span>Years</span></div>
+          <div><b>40+</b><span>Projects</span></div>
+          <div><b>5</b><span>Studios</span></div>
+        </div>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="photo-ring">
+          <img src="assets/headshot.png" alt="Portrait of Abrar Amin" />
+        </div>
+        <span class="float-chip chip-1">Unity 3D</span>
+        <span class="float-chip chip-2">ARKit / ARCore</span>
+        <span class="float-chip chip-3">Photon</span>
+        <span class="float-chip chip-4">Mapbox</span>
+      </div>
+    </section>
+
+    <!-- Work / Portfolio gallery -->
+    <section id="work" class="section">
+      <div class="section-head reveal">
+        <h2 class="section-title">Selected <span class="grad-text">Work</span></h2>
+        <p class="section-sub">44 projects across AR, VR, location-based and games — tap any card to browse its videos &amp; screenshots.</p>
+      </div>
+
+      <div class="filter-bar reveal" id="filterBar"><!-- filter chips injected by JS --></div>
+
+      <div class="gallery" id="gallery"><!-- project cards injected by JS --></div>
+
+      <p class="gallery-empty" id="galleryEmpty" hidden>
+        🎬 Portfolio media will appear here once the Google Drive folder is connected.
+      </p>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about">
+      <div class="about-photo reveal">
+        <div class="about-img-wrap">
+          <img src="assets/headshot.png" alt="Abrar Amin" />
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <h2 class="section-title">About <span class="grad-text">me</span></h2>
+        <p>
+          I'm a <strong>Senior Unity Developer &amp; AR/VR Specialist</strong> based in Lahore, Pakistan —
+          a passionate developer with <strong>7+ years</strong> crafting interactive 2D/3D, AR, VR and
+          multiplayer games. I've directed full development lifecycles — architecture, sprint planning
+          and delivery — while leading cross-functional teams of developers, designers and artists.
+        </p>
+        <p>
+          My happy place is at the intersection of <strong>performance and polish</strong>: building reusable
+          internal tools, optimizing rendering and memory, networking expansive scenes, and mentoring
+          developers so they can own complex challenges themselves.
+        </p>
+        <ul class="about-points">
+          <li>🏗️ Architecture &amp; technical leadership</li>
+          <li>🥽 AR/VR across ARKit, ARCore, Vuforia, Lightship</li>
+          <li>🌐 Multiplayer with Photon &amp; raw sockets</li>
+          <li>⚡ Performance, rendering &amp; memory optimization</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Experience timeline -->
+    <section id="experience" class="section">
+      <div class="section-head reveal">
+        <h2 class="section-title">Where I've <span class="grad-text">worked</span></h2>
+        <p class="section-sub">A decade of shipping across studios and continents.</p>
+      </div>
+      <div class="timeline" id="timeline"><!-- injected by JS --></div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section skills">
+      <div class="section-head reveal">
+        <h2 class="section-title">Tools &amp; <span class="grad-text">skills</span></h2>
+        <p class="section-sub">The kit I reach for to build immersive products.</p>
+      </div>
+      <div class="skill-groups" id="skillGroups"><!-- injected by JS --></div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="section">
+      <div class="section-head reveal">
+        <h2 class="section-title">Kind <span class="grad-text">words</span></h2>
+        <p class="section-sub">What clients say after working with me.</p>
+      </div>
+      <div class="testi-grid" id="testiGrid"><!-- injected by JS --></div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact">
+      <div class="contact-card reveal">
+        <h2 class="section-title">Let's create something <span class="grad-text">extraordinary</span></h2>
+        <p class="section-sub">Open to lead roles, contracts and ambitious AR/VR collaborations.</p>
+        <div class="contact-links">
+          <a class="contact-link" href="mailto:abraramin1@gmail.com">
+            <span class="ci">✉️</span><span>abraramin1@gmail.com</span>
+          </a>
+          <a class="contact-link" href="tel:+923334778289">
+            <span class="ci">📞</span><span>+92 333 4778289</span>
+          </a>
+          <a class="contact-link" href="https://www.linkedin.com/in/abrar-amin-8a78b8b3/" target="_blank" rel="noopener">
+            <span class="ci">💼</span><span>LinkedIn</span>
+          </a>
+          <a class="contact-link" href="https://www.upwork.com/freelancers/~013c3e309072027fac" target="_blank" rel="noopener">
+            <span class="ci">🟢</span><span>Upwork</span>
+          </a>
+          <a class="contact-link" href="https://facebook.com/abrar.amin.5" target="_blank" rel="noopener">
+            <span class="ci">📘</span><span>Facebook</span>
+          </a>
+          <a class="contact-link" href="https://instagram.com/abraramin_mughal" target="_blank" rel="noopener">
+            <span class="ci">📷</span><span>Instagram</span>
+          </a>
+          <span class="contact-link">
+            <span class="ci">📍</span><span>Johar Town, Lahore, Pakistan</span>
+          </span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Abrar Amin · Built with too much caffeine ☕</p>
+    <a href="#top" class="to-top">Back to top ↑</a>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="portfolio-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
